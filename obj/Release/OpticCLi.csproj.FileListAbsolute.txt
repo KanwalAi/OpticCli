@@ -1,0 +1,4 @@
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Release\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Release\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Release\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Release\OpticCLi.csproj.CoreCompileInputs.cache

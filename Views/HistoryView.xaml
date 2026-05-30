@@ -1,0 +1,228 @@
+<!--
+    ================================================================
+    File: HistoryView.xaml
+    Project: OpticCli
+    Namespace: OpticCli.Views
+    Description: The command history screen. Displays all past command
+    runs with their risk level, status, and duration.
+    Supports filtering, exporting, and clearing history.
+    ================================================================
+-->
+<Window
+    x:Class="OpticCli.Views.HistoryView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpticCli.Views"
+    Title="OpticCli – Command History"
+    Width="1100"
+    Height="700"
+    AllowsTransparency="True"
+    Background="{StaticResource SurfaceBrush}"
+    ResizeMode="CanResize"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    WindowStyle="None">
+
+    <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="42" />
+                <RowDefinition Height="36" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="28" />
+            </Grid.RowDefinitions>
+
+            <!--  Title Bar  -->
+            <local:TitleBarControl Grid.Row="0" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" />
+
+            <!--  Tab Bar  -->
+            <Border
+                Grid.Row="1"
+                Background="{StaticResource Surface2Brush}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="0,0,0,1">
+                <StackPanel
+                    Margin="16,0"
+                    VerticalAlignment="Stretch"
+                    Orientation="Horizontal">
+                    <Border
+                        Width="1259"
+                        Margin="0,0,0,-1"
+                        Padding="16,0"
+                        BorderBrush="{StaticResource AccentBrush}"
+                        BorderThickness="0,0,0,0.8">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource AccentBrush}"
+                            Text="⌂  Terminal" />
+                    </Border>
+                </StackPanel>
+            </Border>
+
+            <!--  ── Body ──  -->
+            <Grid Grid.Row="2" Margin="28,16,28,14">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <!--  Toolbar  -->
+                    <RowDefinition Height="12" />
+                    <RowDefinition Height="*" />
+                    <!--  History list  -->
+                </Grid.RowDefinitions>
+
+                <!--  ── Toolbar ──  -->
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock
+                        Grid.Column="0"
+                        Margin="0,0,12,0"
+                        VerticalAlignment="Center"
+                        FontFamily="{StaticResource UIFont}"
+                        FontSize="17"
+                        FontWeight="Bold"
+                        Foreground="{StaticResource TextBrush}"
+                        Text="Command History" />
+
+                    <!--  Count badge  -->
+                    <Border
+                        Grid.Column="1"
+                        Padding="12,4"
+                        VerticalAlignment="Center"
+                        CornerRadius="20">
+                        <Border.Background>
+                            <SolidColorBrush Color="#1400E5FF" />
+                        </Border.Background>
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="#3300E5FF" />
+                        </Border.BorderBrush>
+                        <Border.BorderThickness>1</Border.BorderThickness>
+                        <TextBlock
+                            x:Name="EntryCountBadge"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="11"
+                            Foreground="{StaticResource AccentBrush}"
+                            Text="24 entries" />
+                    </Border>
+
+                    <!--  Filter box  -->
+                    <TextBox
+                        x:Name="SearchBox"
+                        Grid.Column="2"
+                        Width="240"
+                        Padding="12,8"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource DarkTextBox}"
+                        TextChanged="SearchBox_TextChanged" />
+
+                    <!--  Export  -->
+                    <Button
+                        x:Name="ExportLogBtn"
+                        Grid.Column="3"
+                        Padding="14,8"
+                        Click="ExportLog_Click"
+                        Content="⬇  Export Log"
+                        Style="{StaticResource GhostBtn}" />
+
+                    <!--  Clear  -->
+                    <Button
+                        Grid.Column="5"
+                        Padding="14,8"
+                        Click="ClearAll_Click"
+                        Content="🗑  Clear All"
+                        Cursor="Hand">
+                        <Button.Background>
+                            <SolidColorBrush Color="#0AEF4444" />
+                        </Button.Background>
+                        <Button.Foreground>
+                            <SolidColorBrush Color="#EF4444" />
+                        </Button.Foreground>
+                        <Button.BorderBrush>
+                            <SolidColorBrush Color="#4DEF4444" />
+                        </Button.BorderBrush>
+                        <Button.BorderThickness>1</Button.BorderThickness>
+                        <Button.FontFamily>
+                            <FontFamily>Consolas</FontFamily>
+                        </Button.FontFamily>
+                        <Button.FontSize>12</Button.FontSize>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border
+                                    Padding="{TemplateBinding Padding}"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!--  New Search  -->
+                    <Button
+                        Grid.Column="7"
+                        Padding="14,8"
+                        Click="NewSearchBtn_Click"
+                        Content="＋  New Search"
+                        Style="{StaticResource PrimaryBtn}" />
+
+                </Grid>
+
+                <!--  ── History ScrollViewer ──  -->
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                    <ScrollViewer.Resources>
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Width" Value="6" />
+                        </Style>
+                    </ScrollViewer.Resources>
+                    <Border
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        ClipToBounds="True"
+                        CornerRadius="12">
+                        <StackPanel x:Name="HistoryPanel" />
+                    </Border>
+                </ScrollViewer>
+            </Grid>
+
+            <!--  Status Bar  -->
+            <Border
+                Grid.Row="3"
+                Background="{StaticResource Surface2Brush}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="0,1,0,0">
+                <Grid Margin="20,0">
+                    <TextBlock
+                        x:Name="StatusBarEntryCount"
+                        VerticalAlignment="Center"
+                        FontFamily="{StaticResource MonoFont}"
+                        FontSize="11"
+                        Foreground="{StaticResource MutedBrush}"
+                        Text="History · 24 stored entries · Local DB" />
+                    <Button
+                        Margin="866,0,0,0"
+                        Padding="12,4"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Click="NewSearchBtn_Click"
+                        Content="＋  New Search"
+                        FontSize="11"
+                        Style="{StaticResource GhostBtn}" />
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

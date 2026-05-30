@@ -1,0 +1,132 @@
+C:\Users\HP EliteBook\Downloads\OpticCLi\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\Downloads\OpticCLi\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\OpticCLi\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\MainWindow.baml
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\MainWindow.g.cs
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\OpticCLi\obj\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\MainWindow.baml
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\MainWindow.g.cs
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\FSE\OpticCLi - Iteration1\obj\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\MainWindow.baml
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\MainWindow.g.cs
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\Downloads\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\App.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\TitleBarControl.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\CustomizeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\HistoryView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\HomeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\OutputView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\SuggestionsView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\TitleBarControl.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi_MarkupCompile.lref
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\CustomizeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\HistoryView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\HomeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\OutputView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\Views\SuggestionsView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi - Iteration1\obj\Debug\OpticCLi.csproj.Up2Date
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\TitleBarControl.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\App.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\CustomizeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\HistoryView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\HomeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\OutputView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\SuggestionsView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\TitleBarControl.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi_MarkupCompile.lref
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\CustomizeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\HistoryView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\HomeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\OutputView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\Views\SuggestionsView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.csproj.Up2Date
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\i243128_KanwalFatima(AIB)_i240124_NMNusky(AIC)_Deliverable1\OpticCLi\obj\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\bin\Debug\OpticCLi.exe.config
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\bin\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\bin\Debug\OpticCLi.pdb
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\TitleBarControl.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\App.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\CustomizeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\HistoryView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\HomeView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\OutputView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\SuggestionsView.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\TitleBarControl.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\App.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi_MarkupCompile.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi_MarkupCompile.lref
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\CustomizeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\HistoryView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\HomeView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\OutputView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\Views\SuggestionsView.baml
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.g.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.Properties.Resources.resources
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.csproj.GenerateResource.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.csproj.Up2Date
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.exe
+C:\Users\HP EliteBook\OneDrive - FAST National University\Documents\FSE\OpticCLi\obj\Debug\OpticCLi.pdb

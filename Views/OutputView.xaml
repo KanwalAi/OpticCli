@@ -1,0 +1,557 @@
+<!--
+    ================================================================
+    File: OutputView.xaml
+    Project: OpticCli
+    Namespace: OpticCli.Views
+    Description: The output screen shown after a command runs. Displays
+    results in a table or raw view with stats, filtering,
+    export options, and an AI error explanation panel.
+    ================================================================
+-->
+<Window
+    x:Class="OpticCli.Views.OutputView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpticCli.Views"
+    Title="OpticCli – Output Visualization"
+    Width="1200"
+    Height="700"
+    AllowsTransparency="True"
+    Background="{StaticResource SurfaceBrush}"
+    ResizeMode="CanResize"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    WindowStyle="None">
+
+    <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="42" />
+                <RowDefinition Height="36" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="28" />
+            </Grid.RowDefinitions>
+
+            <!--  Title Bar  -->
+            <local:TitleBarControl Grid.Row="0" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" />
+
+            <!--  Tab Bar  -->
+            <Border
+                Grid.Row="1"
+                Background="{StaticResource Surface2Brush}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="0,0,0,1">
+                <StackPanel
+                    Margin="16,0"
+                    VerticalAlignment="Stretch"
+                    Orientation="Horizontal">
+                    <Border
+                        Width="1259"
+                        Margin="0,0,0,-1"
+                        Padding="16,0"
+                        BorderBrush="{StaticResource AccentBrush}"
+                        BorderThickness="0,0,0,0.8">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource AccentBrush}"
+                            Text="⌂  Terminal" />
+                    </Border>
+                </StackPanel>
+            </Border>
+
+            <!--  Body  -->
+            <Grid Grid.Row="2" Margin="24,16,24,14">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="8" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="12" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="12" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!--  Execution Banner  -->
+                <Border
+                    x:Name="BannerBorder"
+                    Grid.Row="0"
+                    Padding="16,12"
+                    CornerRadius="10">
+                    <Border.Background>
+                        <SolidColorBrush Color="#0A22C55E" />
+                    </Border.Background>
+                    <Border.BorderBrush>
+                        <SolidColorBrush Color="#3322C55E" />
+                    </Border.BorderBrush>
+                    <Border.BorderThickness>1</Border.BorderThickness>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            x:Name="BannerIcon"
+                            Grid.Column="0"
+                            Margin="0,0,14,0"
+                            VerticalAlignment="Center"
+                            FontSize="18"
+                            Text="⏳" />
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                            <TextBlock
+                                x:Name="BannerStatusText"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                Foreground="#86EFAC"
+                                Text="Executing command..." />
+                            <TextBlock
+                                x:Name="ExecutedCmdText"
+                                Margin="0,3,0,0"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="11"
+                                Foreground="{StaticResource AccentBrush}"
+                                Text="" />
+                        </StackPanel>
+                        <TextBlock
+                            x:Name="ElapsedText"
+                            Grid.Column="2"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource MutedBrush}"
+                            Text="..." />
+                    </Grid>
+                </Border>
+                <!--  AI Error Explanation Panel  -->
+                <Border
+                    x:Name="ErrorExplainPanel"
+                    Grid.Row="2"
+                    Margin="0,8,0,0"
+                    Padding="16,12"
+                    CornerRadius="10"
+                    Visibility="Collapsed">
+                    <Border.Background>
+                        <SolidColorBrush Color="#0AEF4444" />
+                    </Border.Background>
+                    <Border.BorderBrush>
+                        <SolidColorBrush Color="#33EF4444" />
+                    </Border.BorderBrush>
+                    <Border.BorderThickness>1</Border.BorderThickness>
+                    <StackPanel>
+                        <StackPanel Margin="0,0,0,8" Orientation="Horizontal">
+                            <TextBlock
+                                Margin="0,0,8,0"
+                                FontSize="14"
+                                Text="🤖" />
+                            <TextBlock
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                FontWeight="Bold"
+                                Foreground="#FCA5A5"
+                                Text="AI Error Explanation" />
+                        </StackPanel>
+                        <TextBlock
+                            x:Name="ErrorWhyText"
+                            Margin="0,0,0,4"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="#FCA5A5"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Name="ErrorFixText"
+                            Margin="0,0,0,4"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="#86EFAC"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Name="ErrorTipText"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource MutedBrush}"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <!--  Stats Pills  -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <Border
+                        Margin="0,0,10,0"
+                        Padding="14,6"
+                        Background="#05FFFFFF"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                x:Name="ItemsFoundNum"
+                                Margin="0,0,6,0"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="13"
+                                FontWeight="SemiBold"
+                                Foreground="{StaticResource AccentBrush}"
+                                Text="0" />
+                            <TextBlock
+                                x:Name="ItemsFoundLabel"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                Foreground="{StaticResource MutedBrush}"
+                                Text="items found" />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Margin="0,0,10,0"
+                        Padding="14,6"
+                        Background="#05FFFFFF"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                x:Name="OutputLinesNum"
+                                Margin="0,0,6,0"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="13"
+                                FontWeight="SemiBold"
+                                Foreground="{StaticResource AccentBrush}"
+                                Text="0" />
+                            <TextBlock
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                Foreground="{StaticResource MutedBrush}"
+                                Text="output lines" />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Margin="0,0,10,0"
+                        Padding="14,6"
+                        Background="#05FFFFFF"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                x:Name="StatusPillText"
+                                Margin="0,0,6,0"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="13"
+                                FontWeight="SemiBold"
+                                Foreground="{StaticResource GreenBrush}"
+                                Text="..." />
+                            <TextBlock
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                Foreground="{StaticResource MutedBrush}"
+                                Text="status" />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Padding="14,6"
+                        Background="#05FFFFFF"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                x:Name="TimePillText"
+                                Margin="0,0,6,0"
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="13"
+                                FontWeight="SemiBold"
+                                Foreground="{StaticResource AccentBrush}"
+                                Text="..." />
+                            <TextBlock
+                                FontFamily="{StaticResource MonoFont}"
+                                FontSize="12"
+                                Foreground="{StaticResource MutedBrush}"
+                                Text="seconds" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <!--  Toolbar  -->
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <Button
+                            x:Name="TableBtn"
+                            Margin="0,0,6,0"
+                            Padding="14,7"
+                            Click="TableBtn_Click"
+                            Content="⊞  Table"
+                            Style="{StaticResource PrimaryBtn}" />
+                        <Button
+                            x:Name="RawBtn"
+                            Padding="14,7"
+                            Click="RawBtn_Click"
+                            Content="⊟  Raw"
+                            Style="{StaticResource GhostBtn}" />
+
+                    </StackPanel>
+                    <TextBox
+                        x:Name="FilterBox"
+                        Grid.Column="1"
+                        Width="220"
+                        Padding="12,8"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource DarkTextBox}"
+                        Text=""
+                        TextChanged="FilterBox_TextChanged" />
+                    <!--  Export CSV  -->
+                    <StackPanel Grid.Column="2" ToolTipService.ShowOnDisabled="True">
+                        <StackPanel.ToolTip>
+                            <ToolTip
+                                x:Name="ExportCsvToolTip"
+                                Content="No data to export"
+                                Visibility="Collapsed" />
+                        </StackPanel.ToolTip>
+                        <Button
+                            x:Name="ExportCsvBtn"
+                            Padding="14,7"
+                            Click="ExportCSV_Click"
+                            Content="⬇  Export CSV"
+                            Style="{StaticResource GhostBtn}" />
+                    </StackPanel>
+
+                    <!--  Export JSON  -->
+                    <StackPanel Grid.Column="4" ToolTipService.ShowOnDisabled="True">
+                        <StackPanel.ToolTip>
+                            <ToolTip
+                                x:Name="ExportJsonToolTip"
+                                Content="No data to export"
+                                Visibility="Collapsed" />
+                        </StackPanel.ToolTip>
+                        <Button
+                            x:Name="ExportJsonBtn"
+                            Padding="14,7"
+                            Click="ExportJSON_Click"
+                            Content="⬇  Export JSON"
+                            Style="{StaticResource GhostBtn}" />
+                    </StackPanel>
+                </Grid>
+
+                <!--  Output Area (DataGrid + Raw TextBox stacked)  -->
+                <Grid x:Name="OutputAreaGrid" Grid.Row="6">
+                    <!--  DataGrid  -->
+                    <Border
+                        x:Name="GridBorder"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        ClipToBounds="True"
+                        CornerRadius="10"
+                        Visibility="Collapsed">
+                        <DataGrid
+                            x:Name="ResultsGrid"
+                            ColumnHeaderStyle="{StaticResource DarkDataGridColumnHeader}"
+                            EnableRowVirtualization="True"
+                            RowStyle="{StaticResource DarkDataGridRow}"
+                            ScrollViewer.CanContentScroll="True"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            Style="{StaticResource DarkDataGrid}"
+                            VirtualizingPanel.IsVirtualizing="True"
+                            VirtualizingPanel.VirtualizationMode="Recycling">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Width="220" Header="Name">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel
+                                                Margin="14,0"
+                                                VerticalAlignment="Center"
+                                                Orientation="Horizontal">
+                                                <TextBlock
+                                                    Margin="0,0,10,0"
+                                                    VerticalAlignment="Center"
+                                                    FontSize="15"
+                                                    Text="{Binding Icon}" />
+                                                <TextBlock
+                                                    VerticalAlignment="Center"
+                                                    FontFamily="{StaticResource MonoFont}"
+                                                    FontSize="12"
+                                                    FontWeight="SemiBold"
+                                                    Foreground="{StaticResource TextBrush}"
+                                                    Text="{Binding Name}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn
+                                    Width="90"
+                                    Binding="{Binding Size}"
+                                    Header="Size">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                                            <Setter Property="FontFamily" Value="Consolas" />
+                                            <Setter Property="FontSize" Value="12" />
+                                            <Setter Property="Margin" Value="14,0" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn Width="90" Header="Type">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Border
+                                                Margin="14,8"
+                                                Padding="7,3"
+                                                VerticalAlignment="Center"
+                                                Background="{Binding TypeBadgeBg}"
+                                                BorderBrush="{Binding TypeBadgeBd}"
+                                                BorderThickness="1"
+                                                CornerRadius="4">
+                                                <TextBlock
+                                                    FontFamily="{StaticResource MonoFont}"
+                                                    FontSize="10"
+                                                    FontWeight="Bold"
+                                                    Foreground="{Binding TypeBadgeFg}"
+                                                    Text="{Binding Type}" />
+                                            </Border>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn
+                                    Width="110"
+                                    Binding="{Binding Modified}"
+                                    Header="Modified">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+                                            <Setter Property="FontFamily" Value="Consolas" />
+                                            <Setter Property="FontSize" Value="12" />
+                                            <Setter Property="Margin" Value="14,0" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn
+                                    Width="*"
+                                    Binding="{Binding Path}"
+                                    Header="Path">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+                                            <Setter Property="FontFamily" Value="Consolas" />
+                                            <Setter Property="FontSize" Value="11" />
+                                            <Setter Property="Margin" Value="14,0" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!--  Raw output TextBox  -->
+                    <Border
+                        x:Name="RawBorder"
+                        Background="{StaticResource Surface2Brush}"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Visibility="Collapsed">
+                        <TextBox
+                            x:Name="RawOutputBox"
+                            Padding="14"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource TextBrush}"
+                            IsReadOnly="True"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto" />
+                    </Border>
+                </Grid>
+
+                <!--  Pagination  -->
+                <Grid Grid.Row="10" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="PageInfo"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource MutedBrush}"
+                            Text="Ready" />
+                        <TextBlock
+                            x:Name="SelCount"
+                            FontFamily="{StaticResource MonoFont}"
+                            FontSize="12"
+                            Foreground="{StaticResource MutedBrush}"
+                            Text="" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <Button
+                            Margin="0,0,4,0"
+                            Padding="10,6"
+                            Content="←"
+                            Style="{StaticResource GhostBtn}" />
+                        <Button
+                            Margin="0,0,4,0"
+                            Padding="10,6"
+                            Content="1"
+                            Style="{StaticResource PrimaryBtn}" />
+                        <Button
+                            Padding="10,6"
+                            Content="→"
+                            Style="{StaticResource GhostBtn}" />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <!--  Status Bar  -->
+            <Border
+                Grid.Row="3"
+                Background="{StaticResource Surface2Brush}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="0,1,0,0">
+                <Grid Margin="20,0">
+                    <TextBlock
+                        x:Name="StatusBarText"
+                        VerticalAlignment="Center"
+                        FontFamily="{StaticResource MonoFont}"
+                        FontSize="11"
+                        Foreground="{StaticResource MutedBrush}"
+                        Text="Executing..." />
+                    <StackPanel
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                        <Button
+                            Padding="12,4"
+                            Click="NewSearchBtn_Click"
+                            Content="＋  New Search"
+                            FontSize="11"
+                            Style="{StaticResource GhostBtn}" />
+                        <Button
+                            Padding="12,4"
+                            Click="HistoryBtn_Click"
+                            Content="History  →"
+                            FontSize="11"
+                            Style="{StaticResource GhostBtn}" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
