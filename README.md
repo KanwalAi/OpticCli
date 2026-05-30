@@ -3,6 +3,28 @@
 An intelligent Windows desktop application that translates natural language
 into PowerShell commands, with risk analysis, visual output, and command history.
 
+## Screenshots
+
+### Home Screen
+
+![Home Screen](screenshots/home.png)
+
+### AI Suggestions
+
+![Suggestions](screenshots/suggestions.png)
+
+### Error Explanation
+
+![Error Explanation](screenshots/errorExplanation.png)
+
+### Output Visualization
+
+![Output](screenshots/output.png)
+
+### History
+
+![History](screenshots/history.png)
+
 ---
 --------------------------------------------------------------------
 ## Quick Run By mysetup.exe (No Installation Required)
