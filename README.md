@@ -42,7 +42,7 @@ If you just want to run the app immediately:
 ---
 ---------------------------------------------------------------------
 
-## Run By Visual Studio roject
+## Run By Visual Studio Project
 
 ## Prerequisites
 
