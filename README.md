@@ -3,6 +3,29 @@
 An intelligent Windows desktop application that translates natural language
 into PowerShell commands, with risk analysis, visual output, and command history.
 
+---
+
+## Why OpticCli?
+
+Command-line interfaces are powerful but often difficult for beginners because they require memorizing commands and syntax.
+
+OpticCli simplifies this experience by allowing users to describe tasks in plain English and receive AI-generated PowerShell commands that can be reviewed, customized, and executed safely.
+
+---
+
+## Tech Stack
+
+- C#
+- WPF
+- .NET Framework 4.8
+- PowerShell 7.4
+- Groq API (LLaMA 3.3 70B)
+- Newtonsoft.Json
+- XAML
+- System.Speech
+
+---
+
 ## Screenshots
 
 ### Home Screen
@@ -30,7 +53,7 @@ into PowerShell commands, with risk analysis, visual output, and command history
 ![History](Screenshots/history.png)
 
 ---
---------------------------------------------------------------------
+
 ## Quick Run By mysetup.exe (No Installation Required)
 
 If you just want to run the app immediately:
@@ -40,7 +63,6 @@ If you just want to run the app immediately:
 4. Requires Windows 10/11 and internet connection for AI features
 
 ---
----------------------------------------------------------------------
 
 ## Run By Visual Studio Project
 
@@ -146,8 +168,18 @@ OpticCli/
 
 | Name | ID | Role |
 |---|---|---|
-| Kanwal Fatima | 24I-3128 | Frontend, AI Integration, Command Parsing |
-| Nishan Muhammad Nusky | 24I-0124 | Architecture, Database, Documentation |
+| Kanwal Fatima | Frontend, AI Integration, Command Parsing |
+| Nishan Muhammad Nusky | Architecture, Database, Documentation |
 
 **Department of Computer Science**
 **National University of Computer and Emerging Sciences, Islamabad**
+
+---
+
+## My Contributions
+
+- Frontend development using WPF and XAML
+- Groq API integration
+- AI response parsing
+- Command suggestion workflow
+- User interface design and implementation
