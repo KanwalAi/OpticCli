@@ -7,23 +7,27 @@ into PowerShell commands, with risk analysis, visual output, and command history
 
 ### Home Screen
 
-![Home Screen](screenshots/home.png)
+![Home Screen](Screenshots/home.png)
 
 ### AI Suggestions
 
-![Suggestions](screenshots/suggestions.png)
+![Suggestions](Screenshots/suggestions.png)
+
+### Parameter Customization
+
+![Parameter Customization](Screenshots/parameterCustomization.png)
 
 ### Error Explanation
 
-![Error Explanation](screenshots/errorExplanation.png)
+![Error Explanation](Screenshots/errorExplanation.png)
 
 ### Output Visualization
 
-![Output](screenshots/output.png)
+![Output](Screenshots/output.png)
 
 ### History
 
-![History](screenshots/history.png)
+![History](Screenshots/history.png)
 
 ---
 --------------------------------------------------------------------
